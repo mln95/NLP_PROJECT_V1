@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP</title>
+</head>
+
+<body>
+    <header>
+        <h1>Evaluate your articles with Sentiment Analysis API from Meaning Cloud</h1>
+        <p>Sentiment Analysis analyzes texts and detects their polarity, subjectivity, irony and emotional agreement.</p>
+        <!-- <form>
+            <label>Insert your article URL</label><br/>
+            <input type="url" id="url" placeholder="Enter a url here"/>
+            <input type="submit" id="submit" value ="Submit"/>
+        </form> -->
+        <form class="" id="" onsubmit="return Client.handleSubmit(event)">
+            <input class="user_input" id="url" type="text" name="input" value="" placeholder="Enter a URL here">
+            <input class="btn" type="submit" id="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+        </form>
+    </header>
+    <section>
+        <p id="score_tags">Score tags:</p>
+        <p id="irony">Irony: </p>
+        <p id="subjectivity">Subjectivity:</p>
+        <p id="confidence">Confidence:</p>
+    </section>
+    <footer>
+        <p>Project 4</p>
+        <p id="mvRight">Front End Web Developer Nanodegree Program</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+</body>
+
+</html>

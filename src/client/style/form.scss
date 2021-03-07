@@ -1,0 +1,32 @@
+form{
+    background-color: rgba(160, 106, 253, 0.3);
+    width: 60%;
+    text-align: center;
+    margin: 20vh auto 5vh auto;
+    padding: 5vh;
+}
+#url{
+    width: 50%;
+    border-radius: 10px;
+    padding: 1vh 2vw;
+    margin: 20px 0;
+    border: none;
+    text-align: center;
+}
+#submit{
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+    border: none;
+    background-color: #701EFC;
+    color: #ffffff;
+    cursor: pointer;
+}
+#submit:hover{
+    color: pink;
+}
+::placeholder{
+    color: #E912FE;
+}
+label{
+    color: #ffffff;
+}
